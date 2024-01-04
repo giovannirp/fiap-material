@@ -1,0 +1,40 @@
+.container {
+  border: 1px solid rgb(141, 141, 141);
+  max-width: 400px;
+  margin: 80px auto;
+  background: rgb(219, 210, 210);
+  border-radius: 5px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-control input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  max-width: 250px;
+  outline: none;
+}
+
+button {
+  height: 28px;
+  margin-left: 10px;
+  background: rgb(74, 74, 74);
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.error {
+  color: red;
+  text-align: left;
+}
+
+.d-none {
+  display: none;
+}

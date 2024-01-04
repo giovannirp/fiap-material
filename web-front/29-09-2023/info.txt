@@ -1,0 +1,22 @@
+Informações: 
+ 
+1 - Criar um repositório com o nome: check-point-front-01 
+2 - Clonar o repositório e criar um branch com o nome front-web 
+3 - Criar um arquivo HTML com o nome exercicio.html e criar um arquivo JavaScript com o nome script.js. 
+4 - No arquivo exercicio.html, criar uma estrutura HTML com um título h1, 
+com o texto exercício e chamar o script.js no final da página. 
+5 - No arquivo script.js, criar uma lista de variáveis com os seguintes nomes: 
+  - nome que recebe o seu nome 
+  - idade que recebe a sua idade 
+  - status com um valor booleano verdadeiro 
+  - valorProduto que recebe um valor número flutuante, com o preço de 10.50 
+  - listaTimes com uma Array com três times. 
+6 - Listar cada variável em um console.log 
+7 - No mesmo arquivo, criar operações matemáticas com 5 variáveis: 
+	- soma 
+	- subtracao 
+	- multiplicacao 
+	- divisao 
+8 - Mostrar os resultados no console.log 
+9 - Commitar todas essas alterações e subir essas alterações no git 
+10 - Colocar o link do repositório na tarefa no teams  

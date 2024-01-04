@@ -1,0 +1,26 @@
+01 -
+for (let i = 1; i <= 10; i++) {
+  console.log(`Esta é a ${i}ª vez que esta frase é exibida no console.`);
+}
+
+-----------------------------------------------
+
+02 -
+
+let i = 0;
+while(i <= 5) {
+  console.log(i)
+  i++;
+}
+
+------------------------------------------------
+
+03 - 
+const cities = ['São Paulo', 'Rio de Janeiro', 'Minas Gerais'];
+let upperCaseCities = [];
+
+for (let i = 0; i < cities.length; i++) {
+  upperCaseCities.push(cities[i].toUpperCase());
+}
+
+console.log(upperCaseCities);
