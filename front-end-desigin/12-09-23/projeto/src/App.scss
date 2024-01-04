@@ -1,0 +1,52 @@
+@import "./variavel";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-principal;
+}
+
+.container {
+  margin: 20px;
+  background: $cor-fundo;
+  max-width: 950px;
+  padding: 20px;
+  
+  .estrutura {
+    display: flex;
+
+    .box {
+      max-width: 400px;
+      border-radius: 5px;
+      border: 1px solid rgb(166, 162, 162);
+      margin-right: 25px;
+
+      h1 {
+        padding: 10px;
+        color: $texto-padrao;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        padding: 10px;
+        color: $texto-padrao;
+      }
+
+      a {
+        color: $cor-link;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: $cor-hover;
+        }
+      }
+    }
+  }
+}

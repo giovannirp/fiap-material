@@ -1,0 +1,22 @@
+Fala Pessoal, tudo bem?
+
+Na próxima aula, no dia 05/09/2023, já está agendada nossa primeira atividade.
+
+No dia da aula, após a finalização da atividade. Vou precisar que vocês me envie o link do gitHub, com a tarefa finalizada.
+
+A imagem do layout, irei apresentar no dia da aula.
+
+Criar uma tela, com uma estrutura HTML5 com as tag semântica.
+- Header  
+- Main
+- Section
+- Aside
+- Footer
+  
+Criar um banner, com uma imagem de 780px/300px
+
+Criar um accordion, para uma lista de itens de front end.
+
+ 
+Dicas: Para importar uma imagem, pode utilizar esse site:
+https://picsum.photos/

@@ -1,0 +1,81 @@
+
+/******************* Animação com imagem ***********************/
+.animation-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.jumping-image {
+  width: 200px;
+  position: absolute;
+  /* Adiciona a animação chamada 'jump' */
+  animation: jump 1s ease infinite; 
+}
+
+@keyframes jump {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-30px); /* A imagem pula para cima */
+  }
+}
+
+/******************* fim Animação com imagem ***********************/
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.input-field {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  /* Adiciona uma transição nas propriedades border-color e transform */
+  transition: border-color 0.3s, transform 0.3s; 
+}
+
+.input-field:focus {
+  border-color: #3498db; /* Cor da borda muda ao focar no campo */
+  transform: scale(1.2); /* Campo aumenta de tamanho quando está em foco */
+}
+
+
+/***************** box imagem ****************/
+.image-card {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 102, 255, 0.354);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: #fff;
+}
+
+.image-card:hover img {
+  transform: scale(1.1);
+}
+
+.image-card:hover .overlay {
+  opacity: 1;
+}

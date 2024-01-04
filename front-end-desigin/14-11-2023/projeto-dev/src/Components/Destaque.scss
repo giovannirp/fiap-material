@@ -1,0 +1,38 @@
+.destaque {
+  border: 1px solid #8c8888;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width:850px) { 
+    flex-direction: column;
+  }
+
+  article {
+    max-width: 300px;
+    border: 1px solid rgb(174, 173, 173);
+    display: flex;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px rgb(147, 145, 145);
+
+    @media (max-width:850px) { 
+      max-width: 850px;
+    }
+
+    div {
+      padding: 15px;
+
+      h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+  
+      h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+
+  }
+}

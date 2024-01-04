@@ -1,0 +1,121 @@
+@import "./variavel";
+
+// Criando mixins
+@mixin tituloTipografia {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: monospace;
+  color: #8844EE;
+}
+
+@mixin circulo($tamanho) {
+  width: $tamanho;
+  height: $tamanho;
+  border-radius: $tamanho / 2;
+  overflow: hidden;
+}
+
+@function cor-fundo(){
+  @return $cor-hover;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-principal;
+
+  background: cor-fundo();
+}
+
+.text-shadow {
+  text-shadow: 2px 1px 1px #bfb7b7;
+}
+
+.border-shadow {
+  border: 2px solid rgb(7, 29, 99);
+  box-shadow: 2px 2px 2px rgb(36, 32, 151);
+}
+
+.container {
+  margin: 20px;
+  background: $cor-fundo;
+  max-width: 950px;
+  padding: 20px;
+  
+  .estrutura {
+    display: flex;
+
+    
+    @media (max-width:578px) {
+      flex-wrap: wrap;
+     }
+
+    .box {
+      max-width: 400px;
+      border-radius: 5px;
+      border: 1px solid rgb(166, 162, 162);
+      margin-right: 25px;
+      margin-bottom: 15px;
+
+      h1 {
+        padding: 10px;
+        color: $texto-padrao;
+
+        @extend .text-shadow;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        padding: 10px;
+        color: $texto-padrao;
+      }
+
+      a {
+        color: $cor-link;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: $cor-hover;
+        }
+      }
+    }
+  }
+
+  .estrutura-card {
+    h1 {
+      @include tituloTipografia;
+      padding: 15px;
+
+      @extend .text-shadow;
+    }
+
+    div {
+      display: flex;
+
+      @media (max-width:578px) {
+       flex-wrap: wrap;
+      }
+      
+      article {
+        @include circulo(150px);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ff00d8;
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+        @extend .border-shadow;
+      }
+    }
+  }
+}

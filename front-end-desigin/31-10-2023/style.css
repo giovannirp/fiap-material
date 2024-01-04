@@ -1,0 +1,23 @@
+body {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(44,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.css-sprite{
+  background-image: url("./imagem-sprite.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.sprite-face{
+  width: 65px;
+  height: 61px;
+  background-position: -40px -22px;
+  border: 1px solid;
+}
+
+.sprite-youtube{
+  width: 63px;
+  height: 61px;
+  background-position: -345px -92px;
+  border: 1px solid;
+}
