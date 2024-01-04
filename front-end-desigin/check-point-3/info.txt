@@ -1,0 +1,12 @@
+Check Point 3
+
+1 - Clonar repositório 
+	https://github.com/giovannirp/check-point-3-front
+
+2 - Entrar no projeto-base, instalar as dependência com npm install e dar um start na aplicação
+
+3 - Na pasta components, criar um component novo e chamar no App.js
+
+4 - Abrir a imagem do layout-final e criar o front-end em bootstrap neste componente. Seguir o layout da imagem.
+
+Vou corrigir, durante a aula.
